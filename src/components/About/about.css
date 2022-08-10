@@ -1,0 +1,91 @@
+body {
+  background-color: rgba(0, 0, 0);
+}
+
+.about-me-bg-lg {
+  opacity: 0.4;
+  background-image: url('../../assets/images/austinSkyline.jpg');
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poiret One', cursive;
+  color: whitesmoke;
+}
+
+.portrait {
+  width: auto;
+  height: 20vh;
+  margin: 1rem auto 0 auto;
+  cursor: pointer;
+  border-radius: 45%;
+}
+
+.about-me-content {
+  margin: 1rem;
+}
+
+.about-me-header {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-btn {
+  background-color: var(--bg);
+  color: whitesmoke;
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: -1px -1px 1px 1px whitesmoke;
+}
+
+.contact-btn:hover {
+  background-color: var(--bg);
+  color: #e0d68a;
+  transform: translateY(-2px);
+  box-shadow: none;
+  border: 1px solid whitesmoke;
+}
+
+.contact-btn:active {
+  background-color: var(--bg);
+  color: #e0d68a;
+  border: 2px solid #e0d68a;
+}
+
+@media screen and (min-width: 795px) {
+  .about-me-container {
+    width: 60%;
+    margin: 2rem auto;
+    align-items: center;
+  }
+
+  .about-me-header {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about-me-container {
+    width: 40%;
+    margin: 2rem auto 0 15vw;
+  }
+}
