@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 0, 0);
+  background-color: #161b33;
 }
 
 .about-me-bg-lg {
@@ -85,7 +85,11 @@ body {
 
 @media screen and (min-width: 1000px) {
   .about-me-container {
-    width: 40%;
-    margin: 2rem auto 0 15vw;
+    width: 50%;
+    margin: 2rem auto 0 10vw;
+  }
+
+  .about-me-text {
+    font-size: 1.3rem;
   }
 }
