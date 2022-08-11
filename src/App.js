@@ -1,10 +1,11 @@
 import React from 'react';
-import About from './components/About/index.js';
-
+import Navigation from './components/Navigation';
+import About from './components/About';
 
 function App() {
   return (
     <div>
+      <Navigation />
       <main>
         <About />
       </main>

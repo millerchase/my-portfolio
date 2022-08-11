@@ -1,20 +1,22 @@
 import React from 'react';
-import './about.css';
+import './about.scss';
 import headShot from '../../assets/images/head-shot.jpg';
 
 function About() {
   return (
     <section id="about-me-section">
       <div className="about-me-bg-lg"></div>
-      <div className="about-me-container about-me-bg-sm">
-        <div className="portrait">
+      <div className="about-me-container px-1">
+        <div className="portrait mb-4">
           <img src={headShot} className="my-2 portrait" alt="My head shot" />
         </div>
         <div className="about-me-content">
           <div className="about-me-header">
-            <h2 id="about">Hello I'm Chase,</h2>
+            <h2 className="mb-2" id="about">
+              Hello I'm Chase,
+            </h2>
           </div>
-          <div className="about-me-text">
+          <div className="about-me-text my-4">
             <p>
               a dynamic full-stack web developer that specializes in JavaScript.
               Whether putting together a stylish, dynamic, and responsive
@@ -33,8 +35,8 @@ function About() {
               base.
             </p>
           </div>
-          <div className='btn-container'>
-            <button className='contact-btn'>Contact Me</button>
+          <div className="btn-container">
+            <button className="contact-btn">Contact Me</button>
           </div>
         </div>
       </div>

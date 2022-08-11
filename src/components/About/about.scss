@@ -1,3 +1,7 @@
+:root {
+  --primary-blue: #40C1AF;
+  --primary-light: #d9dbf1;
+}
 body {
   background-color: #161b33;
 }
@@ -12,13 +16,16 @@ body {
   right: 0;
   top: 0;
   z-index: -1;
+  margin-top: 100px;
 }
 
 .about-me-container {
   display: flex;
   flex-direction: column;
   font-family: 'Poiret One', cursive;
-  color: whitesmoke;
+  color: var(--primary-light);
+
+  margin: 0 auto;
 }
 
 .portrait {
@@ -30,7 +37,8 @@ body {
 }
 
 .about-me-content {
-  margin: 1rem;
+  margin: 0 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .about-me-header {
@@ -46,28 +54,33 @@ body {
 
 .contact-btn {
   background-color: var(--bg);
-  color: whitesmoke;
+  color: var(--primary-light);
   border: 0;
   border-radius: 5px;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: -1px -1px 1px 1px whitesmoke;
+  box-shadow: -1px -1px 1px 1px var(--primary-light);
 }
 
 .contact-btn:hover {
   background-color: var(--bg);
-  color: #e0d68a;
   transform: translateY(-2px);
   box-shadow: none;
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--primary-light);
 }
 
 .contact-btn:active {
   background-color: var(--bg);
-  color: #e0d68a;
-  border: 2px solid #e0d68a;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+@media screen and (min-width: 500px) {
+  .about-me-container {
+    max-width: 90%;
+  }
 }
 
 @media screen and (min-width: 795px) {
@@ -81,15 +94,21 @@ body {
     font-size: 2rem;
     margin-bottom: -1rem;
   }
-}
-
-@media screen and (min-width: 1000px) {
-  .about-me-container {
-    width: 50%;
-    margin: 2rem auto 0 10vw;
-  }
 
   .about-me-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .about-me-container {
+    width: 60%;
+    margin: 2rem auto 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .about-me-container {
+    width: 50%;
   }
 }
