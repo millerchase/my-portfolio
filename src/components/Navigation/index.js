@@ -9,8 +9,8 @@ import './navigation.scss';
 
 function Navigation() {
   return (
-    <Navbar variant="dark" className="nav-bar" expand="lg">
-      <Container className="">
+    <Navbar variant="dark" className="nav-bar sticky-top" expand="lg">
+      <Container className="nav-bar-container">
         <Navbar.Brand className="logo" href="#home">
           <Image roundedCircle src={logo} width="100" height="100" alt="logo" />
         </Navbar.Brand>

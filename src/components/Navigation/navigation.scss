@@ -1,40 +1,29 @@
 :root {
-  --primary-nav-color: #40C1AF;
+  --primary-nav-color: #40c1af;
   --primary-light: #d9dbf1;
   --nav-icon-color: var(--primary-light);
+  --nav-bg-color: #252627;
 }
 
 /* #faff00 */
 // #d9dbf1
 
 .nav-bar {
-  background-color: #252627;
+  background-color: var(--nav-bg-color);
 }
 
 .logo {
   background-color: var(--primary-light);
-  margin-left: -12vw;
+  margin-left: -1vw;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 5px;
+  transition: 0.3s;
 
-  i {
-    transition: all 0.3s ease-in-out;
-  }
-  
   &:hover {
     background-color: var(--primary-nav-color);
-
-    svg {
-      opacity: 0;
-    }
-
-    &:after {
-      opacity: 1;
-    }
   }
 }
-
 
 .nav-list {
   margin-left: 1rem;
@@ -106,10 +95,20 @@
   }
 }
 
+@media screen and (min-width: 577px) {
+  .logo {
+    margin-left: -5vw;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  .logo {
+    margin-left: -2vw;
+  }
+
   .nav-list {
     margin-right: 0;
-    margin-left: 55vw;
+    margin-left: 50vw;
   }
 
   .nav-link {
@@ -145,7 +144,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .logo {
+    margin-left: -3vw;
+  }
   .nav-list {
-    margin-left: 63vw;
+    margin-left: 60vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .logo {
+    margin-left: -6vw;
   }
 }
