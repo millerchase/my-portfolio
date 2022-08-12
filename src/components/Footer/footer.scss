@@ -1,20 +1,29 @@
 .footer {
   height: 10vh;
-  background-color: #252627;
+  background-color: var(--nav-bg-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #d9dbf1;
-
-  .footer-logo {
-    border-radius: 50%;
-    background-color: #d9dbf1;
-  }
+  color: var(--primary-light);
 
   .footer-brand {
+    .footer-logo {
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      transition: 0.3s;
+    }
+
     .signature {
       font-family: 'Cedarville Cursive', cursive;
       margin: auto 0 0 0.5rem;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: var(--primary-blue);
+      .footer-logo {
+        background-color: var(--primary-blue);
+      }
     }
   }
 
@@ -32,7 +41,7 @@
       transition: 0.3s;
 
       &:hover {
-        color: #d9dbf1;
+        color: var(--primary-light);
         font-size: 1.7rem;
       }
     }
@@ -40,11 +49,11 @@
 }
 
 @media screen and (min-width: 1100px) {
-    .footer {
-       justify-content: space-between;
-       
-       .footer-brand {
-            margin-left: 2rem;
-       }
+  .footer {
+    justify-content: space-between;
+
+    .footer-brand {
+      margin-left: 2rem;
     }
+  }
 }
