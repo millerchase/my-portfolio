@@ -3,7 +3,11 @@ import './footer.scss';
 import logo from '../../logo.svg';
 import dateHandler from '../../utils/dateHandler';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (

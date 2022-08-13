@@ -2,26 +2,13 @@ body {
   background-color: #161b33;
 }
 
-.about-me-bg-lg {
-  opacity: 0.4;
-  background-image: url('../../assets/images/austinSkyline.jpg');
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: -1;
-  margin-top: 100px;
-}
-
 .about-me-container {
   display: flex;
   flex-direction: column;
   font-family: 'Poiret One', cursive;
   color: var(--primary-light);
 
-  margin: 0 auto;
+  margin: 10vh auto 0 auto;
 }
 
 .portrait {
@@ -59,19 +46,20 @@ body {
   cursor: pointer;
   box-shadow: -1px -1px 1px 1px var(--primary-light);
   transition: 0.03s;
-}
 
-.contact-btn:hover {
-  background-color: var(--bg);
-  transform: translateY(-2px);
-  box-shadow: none;
-  border: 1px solid var(--primary-light);
-}
+  &:hover {
+    background-color: var(--bg);
+    transform: translateY(-2px);
+    box-shadow: none;
+    border: 1px solid var(--selected-color);
+    color: var(--selected-color);
+  }
 
-.contact-btn:active {
-  background-color: var(--bg);
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
+  &:active {
+    background-color: var(--bg);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+  }
 }
 
 @media screen and (min-width: 500px) {
