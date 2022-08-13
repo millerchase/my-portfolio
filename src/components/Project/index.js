@@ -63,8 +63,8 @@ function Project() {
   ];
 
   return (
-    <div className="projects my-5">
-      <h1 className='mb-3 mx-2'>My Projects:</h1>
+    <div className="projects">
+      <h1 className='mx-2'>My Projects:</h1>
       <div className="project-list flex-column flex-md-row">
         {projects.map(project => (
           <div className="project my-3" key={project.name}>
