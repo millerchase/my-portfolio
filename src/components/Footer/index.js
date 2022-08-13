@@ -30,7 +30,7 @@ function Footer() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/chase-miller-b60b19231/"
+          href="https://github.com/millerchase"
           className="social-media"
         >
           <FontAwesomeIcon icon={faGithub} />
