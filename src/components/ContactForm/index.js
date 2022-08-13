@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact-form.scss';
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
+  const refForm = useRef();
+
+  const sendEmail = event => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_3h0rxtz',
+        'template_zcf14fh',
+        refForm.current,
+        'STcS6mElQQULN4Lj9'
+      )
+      .then(
+        result => {
+          alert('Your message has been sent!');
+          window.location.reload(false);
+        },
+        error => {
+          alert('Failed to send message. Please try again.');
+        }
+      );
+  };
+
   return (
     <div className="contact-form">
       <section className="content">
@@ -14,54 +38,76 @@ function ContactForm() {
             not hesitate to contact me directly.
           </p>
         </div>
-        <div className="row">
+        <div className="row mt-2">
           <div className="">
-            <form id="contact-form">
-              <div className="row">
-                <div className="contact-input-container">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="form-control"
-                  />
-                  <label for="name" className="">
-                    Your name
-                  </label>
+            <form ref={refForm} onSubmit={sendEmail}>
+              <div className="">
+                <div className="row">
+                  <div className="contact-input-container">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      required
+                    />
+                    <label for="name" className="">
+                      Your name
+                    </label>
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="contact-input-container">
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control"
+                      required
+                    />
+                    <label for="email" className="">
+                      Your email
+                    </label>
+                  </div>
                 </div>
               </div>
+              <hr className="mt-4" />
+              <div className="mt-2">
+                <div className="row">
+                  <div className="contact-input-container">
+                    <input
+                      type="text"
+                      name="subject"
+                      className="form-control"
+                    />
+                    <label for="subject" className="">
+                      Topic of discussion
+                    </label>
+                  </div>
+                </div>
 
-              <div className="row">
-                <div className="contact-input-container">
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    className="form-control"
-                  />
-                  <label for="email" className="">
-                    Your email
-                  </label>
+                <div className="row">
+                  <div className="contact-input-container">
+                    <textarea
+                      type="text"
+                      id="message"
+                      name="message"
+                      rows="2"
+                      className="form-control md-textarea"
+                      required
+                    ></textarea>
+                    <label for="message">Your message</label>
+                  </div>
                 </div>
               </div>
-
               <div className="row">
-                <div className="contact-input-container">
-                  <textarea
-                    type="text"
-                    id="message"
-                    name="message"
-                    rows="2"
-                    className="form-control md-textarea"
-                  ></textarea>
-                  <label for="message">Your message</label>
+                <div className="text-center text-md-left">
+                  <button type="submit" className="contact-btn mt-3">
+                    Get in Touch
+                  </button>
                 </div>
               </div>
             </form>
 
-            <div className="text-center text-md-left">
-              <button className="contact-btn mt-3">Get in Touch</button>
-            </div>
             <div className="status"></div>
           </div>
         </div>

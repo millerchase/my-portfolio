@@ -16,7 +16,7 @@ function Navigation({ currentPage, handlePageChange }) {
   return (
     <Navbar variant="dark" className="nav-bar fixed-top" expand="lg">
       <Container className="nav-bar-container">
-        <Navbar.Brand className="logo" href="#home">
+        <Navbar.Brand className="logo" href="/">
           <Image roundedCircle src={logo} width="100" height="100" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,7 +28,7 @@ function Navigation({ currentPage, handlePageChange }) {
                 className={`${
                   currentPage === 'About' ? 'nav-link selected' : 'nav-link'
                 } about-link`}
-                href="/"
+                href="#about-me"
               >
                 <FontAwesomeIcon icon={faUser} />
               </a>

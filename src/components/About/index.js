@@ -35,9 +35,6 @@ function About() {
               base.
             </p>
           </div>
-          <div className="btn-container">
-            <button className="contact-btn">Contact Me</button>
-          </div>
         </div>
       </div>
     </section>

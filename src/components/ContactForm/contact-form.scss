@@ -50,14 +50,22 @@ label {
   color: var(--primary-light);
 }
 
+hr {
+  color: var(--nav-bg-color);
+}
+
 input,
 textarea {
   opacity: 0.8;
 
   &:focus {
     opacity: 1;
-    outline: none;
+    text-decoration: none;
   }
+}
+
+textarea {
+  height: 7rem;
 }
 
 @media screen and (min-width: 860px) {
