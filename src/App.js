@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Project from './components/Project';
-import Footer from './components/Footer';
+import Resume from './components/Resume';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -15,6 +16,9 @@ function App() {
 
       case 'Project':
         return <Project />;
+
+      case 'Resume':
+        return <Resume />;
 
       case 'Contact':
         return <ContactForm />;

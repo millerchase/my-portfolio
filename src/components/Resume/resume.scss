@@ -1,0 +1,88 @@
+.main-bg {
+  background-color: var(--nav-bg-color);
+}
+
+.middle-bg {
+  background-color: var(--primary-blue);
+}
+
+.resume-container {
+  background-color: var(--nav-bg-color);
+  width: 98%;
+  height: 100vh;
+  margin: -10vw auto;
+  background-attachment: fixed;
+  color: var(--primary-light);
+
+  .resume-content {
+    margin-left: 1rem;
+
+    .resume-header {
+      padding-top: 10vh;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .resume-container {
+    width: 80%;
+
+    .resume-content {
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .middle-bg {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-bg {
+    width: 98%;
+    margin: 0 auto;
+
+    .middle-bg {
+      width: 95%;
+    }
+  }
+
+  .resume-container {
+    padding-top: 5vw;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .main-bg {
+    width: 95%;
+
+    .middle-bg {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 1225px) {
+  .main-bg {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main-bg {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .main-bg {
+    width: 80%;
+
+    .middle-bg {
+      width: 80%;
+    }
+  }
+}
