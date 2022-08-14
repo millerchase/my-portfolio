@@ -4,7 +4,16 @@
 
 .projects {
   color: var(--primary-light);
-  padding-top: 10vh;
+
+
+  .project {
+    &:hover {
+      h2 {
+        color: var(--primary-blue);
+      }
+    }
+  }
+
   .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +44,6 @@
     &:hover {
       .card-background {
         opacity: 1;
-        border: solid var(--primary-blue) 0.2rem;
       }
 
       .card-img-overlay {

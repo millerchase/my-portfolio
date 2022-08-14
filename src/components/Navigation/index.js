@@ -17,7 +17,7 @@ function Navigation({ currentPage, handlePageChange }) {
     <Navbar variant="dark" className="nav-bar fixed-top" expand="lg">
       <Container className="nav-bar-container">
         <Navbar.Brand className="logo" href="/">
-          <Image roundedCircle src={logo} width="100" height="100" alt="logo" />
+          <Image roundedCircle src={logo} alt="logo" className='logo-img' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

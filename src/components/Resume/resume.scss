@@ -1,88 +1,52 @@
-.main-bg {
-  background-color: var(--nav-bg-color);
-}
+// .main-bg {
+//   background-color: var(--nav-bg-color);
+// }
 
-.middle-bg {
-  background-color: var(--primary-blue);
-}
+// .middle-bg {
+//   background-color: var(--selected-color);
+// }
 
 .resume-container {
-  background-color: var(--nav-bg-color);
-  width: 98%;
-  height: 100vh;
-  margin: -10vw auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   background-attachment: fixed;
   color: var(--primary-light);
 
   .resume-content {
     margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     .resume-header {
-      padding-top: 10vh;
+      a {
+        text-decoration: none;
+        color: var(--primary-blue);
+
+        &:hover {
+          font-size: 1.1rem;
+          font-style: italic;
+          border-bottom: 1px solid var(--primary-blue);
+        }
+
+        &:active {
+          font-size: 1.1rem;
+          font-style: italic;
+          color: var(--selected-color);
+          border-bottom: 1px solid var(--selected-color);
+        }
+      }
     }
-  }
-}
 
-@media screen and (min-width: 500px) {
-  .resume-container {
-    width: 80%;
-
-    .resume-content {
-      margin-left: 2rem;
-    }
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .middle-bg {
-    width: 98%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .main-bg {
-    width: 98%;
-    margin: 0 auto;
-
-    .middle-bg {
-      width: 95%;
-    }
-  }
-
-  .resume-container {
-    padding-top: 5vw;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .main-bg {
-    width: 95%;
-
-    .middle-bg {
-      width: 90%;
-    }
-  }
-}
-
-@media screen and (min-width: 1225px) {
-  .main-bg {
-    width: 90%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .main-bg {
-    width: 85%;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .main-bg {
-    width: 80%;
-
-    .middle-bg {
-      width: 80%;
+    img {
+      max-width: 90%;
+      align-self: center;
+      margin-left: 3vw;
+      border-radius: var(--border-radius);
+      opacity: 0.9;
+      box-shadow: -3px 3px 3px 3px var(--nav-bg-color);
     }
   }
 }
