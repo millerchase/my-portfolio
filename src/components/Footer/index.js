@@ -13,7 +13,7 @@ function Footer() {
   return (
     <footer class="footer fixed-bottom">
       <div className="footer-brand d-flex">
-        <a class="navbar-brand d-flex align-items-center" href="/">
+        <a class="navbar-brand d-flex align-items-center" target="_blank" rel="noreferrer" href="https://opensource.org/licenses/Apache-2.0">
           <img
             src={logo}
             width="30"

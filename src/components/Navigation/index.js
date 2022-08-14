@@ -16,8 +16,12 @@ function Navigation({ currentPage, handlePageChange }) {
   return (
     <Navbar variant="dark" className="nav-bar fixed-top" expand="lg">
       <Container className="nav-bar-container">
-        <Navbar.Brand className="logo" href="/">
-          <Image roundedCircle src={logo} alt="logo" className='logo-img' />
+        <Navbar.Brand
+          className="logo"
+          onClick={() => handlePageChange('About')}
+          href="#about"
+        >
+          <Image roundedCircle src={logo} alt="logo" className="logo-img" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
