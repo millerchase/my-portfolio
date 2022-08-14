@@ -9,7 +9,7 @@ function Resume() {
           <div className="resume-content">
             <div className="resume-header">
               <h1 className="mt-4">My Resume</h1>
-              <p>
+              <p className='mx-xl-4'>
                 Download my{' '}
                 <a href={myResume} download>
                   resume
