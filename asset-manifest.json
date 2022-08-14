@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.e355476c.css",
+    "main.js": "/my-portfolio/static/js/main.6847c945.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/next-exit.png": "/my-portfolio/static/media/next-exit.5e962f531f82d3b92c3c.png",
+    "static/media/austin-date-night.png": "/my-portfolio/static/media/austin-date-night.070f6f09e870419ec3ee.png",
+    "static/media/run-buddy.png": "/my-portfolio/static/media/run-buddy.ea0803ad11c64c58640b.png",
+    "static/media/head-shot.jpg": "/my-portfolio/static/media/head-shot.7916ef263bd508633797.jpg",
+    "static/media/resume-img.png": "/my-portfolio/static/media/resume-img.76c2160e2d10d78a1fba.png",
+    "static/media/budget-unlimited.png": "/my-portfolio/static/media/budget-unlimited.62bd35256015dfc5829d.png",
+    "static/media/lets-tech-about-it.png": "/my-portfolio/static/media/lets-tech-about-it.6314ad781052c3466c21.png",
+    "static/media/Screenshot (73).png": "/my-portfolio/static/media/Screenshot (73).4117efcc07555f040854.png",
+    "static/media/team-builder.png": "/my-portfolio/static/media/team-builder.d844a7b9b61083ad9249.png",
+    "static/media/chases-resume.pdf": "/my-portfolio/static/media/chases-resume.a44c1ee7a8dc0fbaaf53.pdf",
+    "static/media/javascript-fundamentals-quiz.png": "/my-portfolio/static/media/javascript-fundamentals-quiz.173d110b9501682959d4.png",
+    "static/media/austinSkyline.jpg": "/my-portfolio/static/media/austinSkyline.f48944c48ce2d8c9b278.jpg",
+    "static/media/logo.svg": "/my-portfolio/static/media/logo.c187bed508951f0c99aca45f614f4e83.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.e355476c.css.map": "/my-portfolio/static/css/main.e355476c.css.map",
+    "main.6847c945.js.map": "/my-portfolio/static/js/main.6847c945.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e355476c.css",
+    "static/js/main.6847c945.js"
+  ]
+}
