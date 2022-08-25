@@ -4,6 +4,14 @@ import './assets/scss/style.scss';
 function Project() {
   const projects = [
     {
+      name: 'Nibbler',
+      description: 'A restaurant social media platform for finding, sharing, and exploring new food experiences.',
+      githubName: 'nibbler',
+      technologies: [
+        'Bcrypt', 'Bootstrap', 'Sass', 'React', 'Multer', 'Node', 'Express', 'GraphQL', 'MongoDB', 'Mongoose', 'Dotenv', 'JWT', 'Webpack',
+      ]
+    },
+    {
       name: 'Next Exit',
       description:
         'Next Exit is a blog platform that allows users to share their stories and experiences with the world.',
