@@ -7,14 +7,14 @@
 
 .logo {
   background-color: var(--primary-light);
-  margin-left: -1vw;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: 10vw;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   border-radius: 5px;
   transition: 0.3s;
 
   .logo-img {
-    max-height: 10vh;
+    max-height: 8vh;
   }
 
   &:hover {
@@ -104,7 +104,7 @@
   &:after {
     content: 'CONTACT';
     bottom: 1rem;
-    left: 2rem;
+    left: 0rem;
   }
 }
 

@@ -50,7 +50,7 @@ function ContactForm() {
                       className="form-control"
                       required
                     />
-                    <label for="name" className="">
+                    <label htmlFor="name" className="">
                       Your name
                     </label>
                   </div>
@@ -64,7 +64,7 @@ function ContactForm() {
                       className="form-control"
                       required
                     />
-                    <label for="email" className="">
+                    <label htmlFor="email" className="">
                       Your email
                     </label>
                   </div>
@@ -79,7 +79,7 @@ function ContactForm() {
                       name="subject"
                       className="form-control"
                     />
-                    <label for="subject" className="">
+                    <label htmlFor="subject" className="">
                       Topic of discussion
                     </label>
                   </div>
@@ -95,7 +95,7 @@ function ContactForm() {
                       className="form-control md-textarea"
                       required
                     ></textarea>
-                    <label for="message">Your message</label>
+                    <label htmlFor="message">Your message</label>
                   </div>
                 </div>
               </div>

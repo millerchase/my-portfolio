@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../../logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,60 +11,88 @@ import './navigation.scss';
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <Navbar variant="dark" className="nav-bar fixed-top" expand="lg">
-      <Container className="nav-bar-container">
-        <Navbar.Brand
-          className="logo"
+    <nav className="navbar navbar-expand-lg bg-dark fixed-top">
+      <div className="container-fluid">
+        <a
+          className="navbar-brand logo ms-1"
           onClick={() => handlePageChange('About')}
           href="#about"
         >
           <Image roundedCircle src={logo} alt="logo" className="logo-img" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <div className="">
-            <Nav className="me-auto nav-list">
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
               <a
                 onClick={() => handlePageChange('About')}
                 className={`${
                   currentPage === 'About' ? 'nav-link selected' : 'nav-link'
                 } about-link`}
                 href="#about-me"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
               >
                 <FontAwesomeIcon icon={faUser} />
               </a>
+            </li>
+            <li className="nav-item">
               <a
                 onClick={() => handlePageChange('Project')}
                 className={`${
                   currentPage === 'Project' ? 'nav-link selected' : 'nav-link'
                 } project-link`}
                 href="#projects"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
               >
                 <FontAwesomeIcon icon={faDesktop} className="project-link" />
               </a>
+            </li>
+            <li className="nav-item">
               <a
                 onClick={() => handlePageChange('Resume')}
                 className={`${
                   currentPage === 'Resume' ? 'nav-link selected' : 'nav-link'
                 } resume-link`}
                 href="#resume"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
               >
                 <FontAwesomeIcon icon={faFile} />
               </a>
+            </li>
+            <li className="nav-item">
               <a
                 onClick={() => handlePageChange('Contact')}
                 className={`${
                   currentPage === 'Contact' ? 'nav-link selected' : 'nav-link'
                 } contact-link`}
                 href="#contact"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
               >
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
-            </Nav>
-          </div>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
