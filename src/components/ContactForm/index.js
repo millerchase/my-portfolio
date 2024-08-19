@@ -1,27 +1,27 @@
-import React, { useRef } from 'react';
-import './contact-form.scss';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import "./contact-form.scss";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const refForm = useRef();
 
-  const sendEmail = event => {
+  const sendEmail = (event) => {
     event.preventDefault();
 
     emailjs
       .sendForm(
-        'service_3h0rxtz',
-        'template_zcf14fh',
+        "default_service",
+        "template_zcf14fh",
         refForm.current,
-        'STcS6mElQQULN4Lj9'
+        "STcS6mElQQULN4Lj9"
       )
       .then(
-        result => {
-          alert('Your message has been sent!');
+        () => {
+          alert("Your message has been sent!");
           window.location.reload(false);
         },
-        error => {
-          alert('Failed to send message. Please try again.');
+        (error) => {
+          alert("Failed to send message. Please try again.");
         }
       );
   };
